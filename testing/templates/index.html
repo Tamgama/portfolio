@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+
+{% block title %}My Portfolio{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero min-vh-100 d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-4 animate-text">Welcome to My Portfolio</h1>
+                <p class="lead mb-4 animate-text-delay">Full Stack Developer & Creative Problem Solver</p>
+                <a href="#projects" class="btn btn-outline-light btn-lg animate-text-delay">View My Work</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img" style="background-image: url('https://images.unsplash.com/photo-1503455637927-730bce8583c0')"></div>
+            </div>
+            <div class="col-lg-6">
+                <p class="lead">Passionate developer with expertise in creating modern web applications. I focus on writing clean, efficient code and building user-friendly interfaces.</p>
+                <div class="mt-4">
+                    <h5>What I Offer:</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle me-2"></i>Responsive Web Design</li>
+                        <li><i class="fas fa-check-circle me-2"></i>Full Stack Development</li>
+                        <li><i class="fas fa-check-circle me-2"></i>UI/UX Design</li>
+                        <li><i class="fas fa-check-circle me-2"></i>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-5">My Projects</h2>
+        <div class="projects-scroll-container">
+            <div class="projects-row">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">E-Commerce Platform</h5>
+                        <p class="card-text">A full-featured online shopping platform with modern UI.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1484981138541-3d074aa97716" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Task Manager</h5>
+                        <p class="card-text">Efficient task management application with real-time updates.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1425421669292-0c3da3b8f529" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Network</h5>
+                        <p class="card-text">Community platform with modern features and clean design.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1496180470114-6ef490f3ff22" class="card-img-top" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather App</h5>
+                        <p class="card-text">Real-time weather updates with interactive maps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Skills</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="skill-category">
+                    <h4><i class="fas fa-code me-2"></i>Frontend</h4>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 90%">HTML/CSS</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 85%">JavaScript</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 80%">React</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-category">
+                    <h4><i class="fas fa-server me-2"></i>Backend</h4>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 85%">Python</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 80%">Node.js</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 75%">SQL</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="skill-category">
+                    <h4><i class="fas fa-tools me-2"></i>Tools</h4>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 90%">Git</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 85%">Docker</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 80%">AWS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark">
+    <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form id="contactForm" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                        <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        <div class="invalid-feedback">Please enter your message.</div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-outline-light btn-lg">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
